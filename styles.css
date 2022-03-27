@@ -32,8 +32,7 @@
 #wrapper,
 #left-picture,
 .logo,
-#right-content,
-form {
+#right-content {
     display: flex;
     flex-wrap: wrap;
 }
@@ -82,7 +81,7 @@ form {
 
 #right-content {
     flex-direction: column;
-    max-width: 45vw;
+    width: 45vw;
     justify-content: space-evenly;
 }
 
@@ -96,16 +95,24 @@ form {
     margin-bottom: 0;
 }
 
-#middle {
-    padding-top: 3vh;
-    box-shadow: 0px 10px 20px -10px var(--txt);
-}
-
 
 #middle p {
     font-size: 1.3rem;
     margin-left: 3vw;
     margin-bottom: 2vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-wrapper {
+    padding: 3vh 0 3vh 0;
+    box-shadow: 0px 10px 20px -10px var(--txt);
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
 }
 
 .left-form {
@@ -121,19 +128,24 @@ input {
     margin-bottom: 3vh;
     font-family: Poppins;
     border: #E5E7EB 1px solid;
-    min-width: 15vw;
+    min-width: 250px;
 }
+
 
 label {
     font-size: .8rem;
+}
 
+label:after {
+    content: " *";
+    color: red;
 }
 
 #form-title {
     font-size: 1.4rem;
 }
 
-#bottom * {
+#bottom {
     margin-left: 3vw;
 }
 
